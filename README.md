@@ -1,4 +1,4 @@
-HypeHand - Stellar Blockchain Admin Dashboard API
+HypeHand - A Stellar Blockchain Project for Gifting.
 
 HypeHand is the backend API for the StarGift platform—a gamified crypto gifting app built on the Stellar blockchain. It enables admins to manage superstars, creators, and users through a secure, scalable admin dashboard. Inspired by Whisper's on-chain messaging and XP systems, StarGift allows seamless token gifting, secret rooms for exclusive interactions, and progression tracking, all powered by Stellar's fast, low-cost transactions. This repository contains the NestJS-based API, including authentication, blockchain integrations, and resource management for the admin interface. ✨ Features
 
