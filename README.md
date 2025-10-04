@@ -1,6 +1,8 @@
 HypeHand - A Stellar Blockchain Project for Gifting.
 
-HypeHand is the backend API for the StarGift platform—a gamified crypto gifting app built on the Stellar blockchain. It enables admins to manage superstars, creators, and users through a secure, scalable admin dashboard. Inspired by Whisper's on-chain messaging and XP systems, StarGift allows seamless token gifting, secret rooms for exclusive interactions, and progression tracking, all powered by Stellar's fast, low-cost transactions. This repository contains the NestJS-based API, including authentication, blockchain integrations, and resource management for the admin interface. ✨ Features
+HypeHand is the Star Gifting platform; crypto gifting app built on the Stellar blockchain. It enables admins to manage superstars, creators, and users through a secure, scalable admin dashboard. Inspired by Whisper's on-chain messaging and XP systems, StarGift allows seamless token gifting, secret rooms for exclusive interactions, and progression tracking, all powered by Stellar's fast, low-cost transactions. This repository contains the NestJS-based API, including authentication, blockchain integrations, and resource management for the admin interface. 
+
+Features:
 
 Admin Authentication & RBAC: Secure JWT-based login with role-based access control (superadmin, moderator). User & Creator Management: Full CRUD for users, profiles, and verification (KYC integration). Stellar Blockchain Integration: Wallet creation, token minting/burning, transaction history, and gifting mechanics. Gamification: XP system, leaderboards, and referral rewards. Messaging & Rooms: On-chain message management and private secret rooms. Moderation Tools: Content flagging, reporting, bans, and audit logs. Analytics & Notifications: Real-time metrics, push/email/SMS notifications. Performance & Security: Rate limiting, caching (Redis), queuing (Bull), and comprehensive testing. Scalability: GraphQL support, API versioning, and scheduled tasks. Compliance: GDPR data privacy, backups, and exports.
 
@@ -8,7 +10,7 @@ Admin Authentication & RBAC: Secure JWT-based login with role-based access contr
 
 Backend: NestJS (TypeScript), TypeORM (PostgreSQL) Blockchain: Stellar SDK for asset issuance, payments, and on-chain data. Auth: JWT, Passport, bcrypt Queue & Cache: Bull (Redis) Testing: Jest (unit, integration, E2E) Deployment: Docker, GitHub Actions CI/CD Monitoring: Winston logging, Prometheus Docs: Swagger/OpenAPI Other: @nestjs/swagger, i18n, Sharp (image processing)
 
-🚀 Quick Start Prerequisites
+Quick Start Prerequisites
 
 Node.js (v18+) PostgreSQL (v14+) Redis (v7+) Docker (optional, for easy setup) Stellar testnet account (for development)
 
