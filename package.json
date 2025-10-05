@@ -1,0 +1,13 @@
+{
+  "name": "my-monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "backend:dev": "npm --workspace backend run start:dev",
+    "backend:build": "npm --workspace backend run build",
+    "backend:lint": "npm --workspace backend run lint"
+  }
+}
