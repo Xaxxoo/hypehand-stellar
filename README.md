@@ -38,7 +38,7 @@ Example cURL for login: curl -X POST http://localhost:3000/auth/login
 -H "Content-Type: application/json"
 -d '{"username":"admin","password":"password"}'
 
-🔧 Usage Admin Workflow
+ Usage Admin Workflow
 
 Login: Use /auth/login to get a JWT token. Manage Users: List users with /users?limit=10&page=1, create via POST. Blockchain Ops: Mint tokens with /tokens/mint (requires Stellar integration). Moderation: Flag content via /moderation/flag, ban users at /bans. Analytics: Fetch metrics at /analytics/dashboard.
 
@@ -46,13 +46,13 @@ Stellar Integration
 
 All gifting uses Stellar assets for tokens. Test on Stellar's Futurenet (testnet equivalent as of 2025). Ensure your Stellar secret key is secure in env vars.
 
-🧪 Testing Run tests: npm run test # Unit + Integration npm run test:e2e # End-to-End
+ Testing Run tests: npm run test # Unit + Integration npm run test:e2e # End-to-End
 
 Coverage report: npm run test:cov
 
-📊 Project Structure hypehand/ ├── src/ │ ├── auth/ # Authentication module │ ├── users/ # User management │ ├── creators/ # Creator profiles │ ├── tokens/ # Gift tokens & Stellar │ ├── messaging/ # On-chain messages │ ├── moderation/ # Content & user moderation │ ├── analytics/ # Metrics & dashboards │ └── common/ # Shared utilities ├── test/ # Test files ├── migrations/ # Database migrations ├── docs/ # Additional docs └── docker-compose.yml # Docker setup
+ Project Structure hypehand/ ├── src/ │ ├── auth/ # Authentication module │ ├── users/ # User management │ ├── creators/ # Creator profiles │ ├── tokens/ # Gift tokens & Stellar │ ├── messaging/ # On-chain messages │ ├── moderation/ # Content & user moderation │ ├── analytics/ # Metrics & dashboards │ └── common/ # Shared utilities ├── test/ # Test files ├── migrations/ # Database migrations ├── docs/ # Additional docs └── docker-compose.yml # Docker setup
 
-🤝 Contributing We welcome contributions! Please follow these steps:
+ Contributing We welcome contributions! Please follow these steps:
 
 Fork the repo and create a feature branch (git checkout -b feature/amazing-feature). Commit changes (git commit -m 'Add amazing feature'). Push to the branch (git push origin feature/amazing-feature). Open a Pull Request.
 
@@ -64,8 +64,8 @@ See CONTRIBUTING.md for details. 📄 License This project is licensed under the
 
 Report vulnerabilities via email: security@hypehand.dev. Use rate limiting and RBAC for protection. Regularly audit with tools like npm audit.
 
-📞 Contact
+ Contact
 
-Project Lead: [Your Name] - @yourtwitter on X Issues: GitHub Issues Discussions: GitHub Discussions
+Project Lead: Aliyu Ahmad - @xaxxoo on X Issues: GitHub Issues Discussions: GitHub Discussions
 
-Built with ❤️ for creators and gifters on Stellar. Star us on GitHub if you find it useful! 🌟
+Built with ❤️ for creators and gifters on Stellar. Star us on GitHub if you find it useful! 
