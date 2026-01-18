@@ -6,7 +6,7 @@ Features:
 
 Admin Authentication & RBAC: Secure JWT-based login with role-based access control (superadmin, moderator). User & Creator Management: Full CRUD for users, profiles, and verification (KYC integration). Stellar Blockchain Integration: Wallet creation, token minting/burning, transaction history, and gifting mechanics. Gamification: XP system, leaderboards, and referral rewards. Messaging & Rooms: On-chain message management and private secret rooms. Moderation Tools: Content flagging, reporting, bans, and audit logs. Analytics & Notifications: Real-time metrics, push/email/SMS notifications. Performance & Security: Rate limiting, caching (Redis), queuing (Bull), and comprehensive testing. Scalability: GraphQL support, API versioning, and scheduled tasks. Compliance: GDPR data privacy, backups, and exports.
 
-🛠 Tech Stack
+ Tech Stack
 
 Backend: NestJS (TypeScript), TypeORM (PostgreSQL) Blockchain: Stellar SDK for asset issuance, payments, and on-chain data. Auth: JWT, Passport, bcrypt Queue & Cache: Bull (Redis) Testing: Jest (unit, integration, E2E) Deployment: Docker, GitHub Actions CI/CD Monitoring: Winston logging, Prometheus Docs: Swagger/OpenAPI Other: @nestjs/swagger, i18n, Sharp (image processing)
 
@@ -50,7 +50,7 @@ All gifting uses Stellar assets for tokens. Test on Stellar's Futurenet (testnet
 
 Coverage report: npm run test:cov
 
- Project Structure hypehand/ ├── src/ │ ├── auth/ # Authentication module │ ├── users/ # User management │ ├── creators/ # Creator profiles │ ├── tokens/ # Gift tokens & Stellar │ ├── messaging/ # On-chain messages │ ├── moderation/ # Content & user moderation │ ├── analytics/ # Metrics & dashboards │ └── common/ # Shared utilities ├── test/ # Test files ├── migrations/ # Database migrations ├── docs/ # Additional docs └── docker-compose.yml # Docker setup
+
 
  Contributing We welcome contributions! Please follow these steps:
 
