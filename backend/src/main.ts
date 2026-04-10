@@ -25,9 +25,20 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, configSwagger);
   SwaggerModule.setup('/api/docs', app, document);
 
+  app.enableShutdownHooks();
+
   const port = config.get('PORT') || 3000;
   await app.listen((port as number) || 3000);
 
   Logger.log(`Server started on http://localhost:${port}`);
+
+  const shutdown = async (signal: string) => {
+    Logger.log(`Received ${signal}, shutting down gracefully...`);
+    await app.close();
+    process.exit(0);
+  };
+
+  process.on('SIGTERM', () => shutdown('SIGTERM'));
+  process.on('SIGINT', () => shutdown('SIGINT'));
 }
 bootstrap();
