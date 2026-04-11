@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from './database/database.module';
 import { AuthModule } from './auth/auth.module';
 import { HealthModule } from './health/health.module';
+import { StellarKeysModule } from './stellar-keys/stellar-keys.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { HealthModule } from './health/health.module';
     DatabaseModule,
     AuthModule,
     HealthModule,
+    StellarKeysModule,
   ],
 })
 export class AppModule {}
